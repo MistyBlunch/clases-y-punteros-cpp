@@ -30,7 +30,10 @@ En la imagen se puede ver que en la primera iteración (*n=1*) solo se obtiene 1
 ## Rubrica  
 - Los siguientes items seran evaluados:  
 
-    |Problema|Excelente: Funciona correctamente en todos los test propuestos, el código esta bien organizado y los algoritmos utilizados son eficientes e implementados con un buen nivel de abstracción|Adecuado: |Insuficiente: |
-    |--|--|--|--|
-    | | | | |
+    |Problema|Excelente: Funciona correctamente en todos los test propuestos, el código esta bien organizado y los algoritmos utilizados son eficientes e implementados con un buen nivel de abstracción|Adecuado: Funciona correctamente al menos el 50% de los test propuestos, el código esta bien organizado y los algoritmos utilizados son eficientes e implementados con un buen nivel de abstracción|Insuficiente: No funciona correctamente en ninguno de los test propuestos, el código no esta bien organizado y los algoritmos utilizados son deficientes e implementados con un bajo nivel de abstracción|
+    |--|:--:|:--:|:--:|
+    |`number_t` |10 pts |5 pts |0 pts|
+    |`search_odds` |2 pts |1 pts |0 pts |
+    |`calculate_pentagon` |2 pts |1 pt |0 pts|
+    |`quick_sort` |6 pts|3 pts|0 pts|
     
