@@ -17,7 +17,8 @@ Completar correctamente los métodos y sobrecarga de operadores de la clase **nu
 En la imagen se puede ver que en la primera iteración (*n=1*) solo se obtiene 1 punto, en la segunda (*n=2*) se obtiene 6 y en la tercera (*n=3*) se obtiene 31.  
 <p align="center">
 <img src="pentagon_number.png" width="500">
-</p>
+</p>  
+  
 3. Completar las funciones **partition** y **quick_sort** que implementen el algoritmo de ordenamiento **quick** en forma recursiva y completar la clase **quicksort_t** basado en la función **quick_sort**, esta clase debe sobrecargar el operador << para recibir el nombre del archivo, abrirlo y ordenarlo usando la función **quick_sort** (en el ejemplo el archivo se llama **in.txt**), ordenarlo y sobrecargar el operador **>>** que creara un archivo con el nombre de archivo descrito (en el ejemplo **out.txt**) y grabara el contenido del archivo **in.txt** ordenado. 
 
     Ejemplo:  
@@ -26,3 +27,10 @@ En la imagen se puede ver que en la primera iteración (*n=1*) solo se obtiene 1
     qs << "in.txt";
     qs >> "out.txt";
     ```
+## Rubrica  
+- Los siguientes items seran evaluados:  
+
+    |Problema|Excelente: Funciona correctamente en todos los test propuestos, el código esta bien organizado y los algoritmos utilizados son eficientes e implementados con un buen nivel de abstracción|Adecuado: |Insuficiente: |
+    |--|--|--|--|
+    | | | | |
+    
