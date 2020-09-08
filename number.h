@@ -56,12 +56,6 @@ public:
     number_t operator/(const T &value);
     number_t operator^(const T &value);
 
-    //friend number_t operator+(const number_t& one, const number_t& another);
-    //friend number_t operator-(const number_t& one, const number_t& another);
-    //friend number_t operator*(const number_t& one, const number_t& another);
-    //friend number_t operator/(const number_t& one, const number_t& another);
-    //friend number_t operator^(const number_t& one, const number_t& exponent);
-
     friend number_t operator+(const T& value, const number_t& another);
     friend number_t operator-(const T& value, const number_t& another);
     friend number_t operator*(const T& value, const number_t& another);
@@ -83,13 +77,6 @@ public:
     bool operator<=(const T &value) const;
     bool operator>=(const T &value) const;
 
-    //friend bool operator==(const number_t& one, const number_t& another);
-    //friend bool operator!=(const number_t& one, const number_t& another);
-    //friend bool operator<(const number_t& one, const number_t& another);
-    //friend bool operator>(const number_t& one, const number_t& another);
-    //friend bool operator<=(const number_t& one, const number_t& another);
-    //friend bool operator>=(const number_t& one, const number_t& another);
-
     friend bool operator==(const T& value, const number_t& another);
     friend bool operator!=(const T& value, const number_t& another);
     friend bool operator<(const T& value, const number_t& another);
@@ -105,12 +92,5 @@ public:
 // i/o operator friends
 istream &operator>>(istream &is, number_t &number);
 ostream &operator<<(ostream &os, const number_t &number);
-
-//bool operator==(const number_t& one, const number_t& another);
-//bool operator!=(const number_t& one, const number_t& another);
-//bool operator<(const number_t& one, const number_t& another);
-//bool operator>(const number_t& one, const number_t& another);
-//bool operator<=(const number_t& one, const number_t& another);
-//bool operator>=(const number_t& one, const number_t& another);
 
 #endif //POO2_UNIT1_WEEK_1_2020_2_NUMBER_H
