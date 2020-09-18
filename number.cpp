@@ -2,174 +2,179 @@
 #include <cmath>
 
 istream& operator>>(istream& is, number_t& number) {
-    // Complete
+    is >> number.value_;
+    return is;
 }
 
 ostream& operator<<(ostream& os, const number_t& number) {
-    // Complete
+    os << number.value_;
+    return  os;
 }
 
 decimal_t number_t::pi() { return 3.14159; }
 
 number_t number_t::operator++() {
-    // Complete
+    return (*this).value_++;
 }
 
 number_t number_t::operator--() {
-    // Complete
+    return (*this).value_--;
 }
 
 number_t number_t::operator++(int) {
-    // Complete
+    return (*this).value_++;
 }
 
 number_t number_t::operator--(int) {
-    // Complete
+    return (*this).value_--;
 }
 
 number_t& number_t::operator=(number_t&& another)  noexcept {
-    // Complete
+    (*this).value_ = another.value_;
+    return *this;
 }
 
 number_t::operator T() const {
-    // Complete
+    return (int)value_;
 }
 
 void number_t::swap(number_t& other)
 {
-    // Complete
+    T tmp = (*this).value_;
+    (*this).value_ = other.value_;
+    other.value_ = tmp;
 }
 
 number_t operator+(const T& value, const number_t& another) {
-    // Complete
+    return value + another.value_;
 }
 
 number_t operator-(const T& value, const number_t& another) {
-    // Complete
+    return value - another.value_;
 }
 
 number_t operator*(const T& value, const number_t& another) {
-    // Complete
+    return value * another.value_;
 }
 
 number_t operator/(const T& value, const number_t& another) {
-    // Complete
+    return value / another.value_;
 }
 
 number_t operator^(const T& base, const number_t& exponent) {
-    // Complete
+    return pow(base, exponent.value_);
 }
 
 bool operator==(const T& value, const number_t& another) {
-    // Complete
+    return value == another.value_ ? true : false;
 }
 
 bool operator!=(const T& value, const number_t& another) {
-    // Complete
+    return value != another.value_ ? true : false;
 }
 
 bool operator<(const T& value, const number_t& another) {
-    // Complete
+    return value < another.value_ ? true : false;
 }
 
 bool operator>(const T& value, const number_t& another) {
-    // Complete
+    return value > another.value_ ? true : false;
 }
 
 bool operator<=(const T& value, const number_t& another) {
-    // Complete
+    return value <= another.value_ ? true : false;
 }
 
 bool operator>=(const T& value, const number_t& another) {
-    // Complete
+    return value >= another.value_ ? true : false;
 }
 
 number_t number_t::operator+(const number_t &another) {
-    // Complete
+    return (*this).value_ + another.value_;
 }
 
 number_t number_t::operator-(const number_t &another) {
-    // Complete
+    return (*this).value_ - another.value_;
 }
 
 number_t number_t::operator*(const number_t &another) {
-    // Complete
+    return (*this).value_ * another.value_;
 }
 
 number_t number_t::operator/(const number_t &another) {
-    // Complete
+    return (*this).value_ / another.value_;
 }
 
-number_t number_t::operator^(const number_t &exponent) {
-    // Complete
+number_t number_t::operator^(const number_t &exponent) { 
+    return pow((*this).value_, exponent.value_);
 }
 
 number_t number_t::operator+(const T &value) {
-    // Complete
+    return (*this).value_ + value;
 }
 
 number_t number_t::operator-(const T &value) {
-    // Complete
+    return (*this).value_ - value;
 }
 
 number_t number_t::operator*(const T &value) {
-    // Complete
+    return (*this).value_ * value;
 }
 
 number_t number_t::operator/(const T &value) {
-    // Complete
+    return (*this).value_ / value;
 }
 
 number_t number_t::operator^(const T &value) {
-    // Complete
+    return pow((*this).value_, value);
 }
 
 bool number_t::operator==(number_t another) const {
-    // Complete
+    return (*this).value_ == another.value_ ? true : false;
 }
 
 bool number_t::operator!=(number_t another) const {
-    // Complete
+    return (*this).value_ != another.value_ ? true : false;
 }
 
 bool number_t::operator<(number_t another) const {
-    // Complete
+    return (*this).value_ < another.value_ ? true : false;
 }
 
 bool number_t::operator>(number_t another) const {
-    // Complete
+    return (*this).value_ > another.value_ ? true : false;
 }
 
 bool number_t::operator<=(number_t another) const {
-    // Complete
+    return (*this).value_ <= another.value_ ? true : false;
 }
 
 bool number_t::operator>=(number_t another) const {
-    // Complete
+    return (*this).value_ >= another.value_ ? true : false;
 }
 
 bool number_t::operator==(const T &value) const {
-    // Complete
+    return (*this).value_ == value ? true : false;
 }
 
 bool number_t::operator!=(const T &value) const {
-    // Complete
+    return (*this).value_ != value ? true : false;
 }
 
 bool number_t::operator<(const T &value) const {
-    // Complete
+    return (*this).value_ < value ? true : false;
 }
 
 bool number_t::operator>(const T &value) const {
-    // Complete
+    return (*this).value_ > value ? true : false;
 }
 
 bool number_t::operator<=(const T &value) const {
-    // Complete
+    return (*this).value_ <= value ? true : false;
 }
 
 bool number_t::operator>=(const T &value) const {
-    // Complete
+    return (*this).value_ >= value ? true : false;
 }
 
 number_t& number_t::operator=(const number_t& another) = default;

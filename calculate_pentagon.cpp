@@ -5,5 +5,8 @@
 #include "calculate_pentagon.h"
 
 number_t calculate_pentagon(number_t n) {
-    // Complete
+    if(n == 0) return 1;
+    else {
+        return 5*n + calculate_pentagon(n-1);
+    }
 }

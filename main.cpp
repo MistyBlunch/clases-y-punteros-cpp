@@ -82,4 +82,3 @@ TEST_CASE("quick sort") {
     qs << "in.txt";
     qs >> "out.txt";
 }
-
